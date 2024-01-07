@@ -1,11 +1,15 @@
 package Generics;
 
-public class IntegerPrinter {
-   static Integer thingToPrint;
-    public  IntegerPrinter(Integer thingToPrint){
+import java.io.Serializable;
+
+public class Printer <T ,V>{
+   T thingToPrint;
+   V otherThing;
+    public Printer(T thingToPrint){
         this.thingToPrint =thingToPrint;
     }
-    public static void print(){
+    public void print(){
+
         System.out.println(thingToPrint);
     }
 }
